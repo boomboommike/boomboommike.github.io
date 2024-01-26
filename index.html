@@ -1,0 +1,90 @@
+ <!--Set up-->
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My test page</title>
+    <link href="styles/style.css" rel="stylesheet" >
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+  </head>
+  <body>
+    <!-- Title name part-->
+    <h1>Manoch Boonnantakul's Personal page</h1>
+
+    <!-- First interaction part. Asks for user's name in a pop-up after clicking the button-->
+    <p>Please click this button <button id="myButton">Click Here!!</button> and put your name </p>
+    
+    <h4 id="name">My name is Manoch Boonnantakul</h4>
+
+    <!-- Short bio part-->
+    <h2>Short Bio:</h2>
+    <p> I'm half Indonesian, half Thai. I grew up in Thailand. I spent most of my childhood in 
+      <strong>Phuket Island</strong>. Then around highschool, I moved to  <strong>Bangkok</strong>
+    and eventually joined <strong> Northeastern!!!</strong></p>
+    <p> I’m pursuing a international business degree with a concentration in Finance and Fintech.
+       As well as, minoring in data science. I'm passionate about blending technology with finance.
+       I'm not just about numbers; I'm a Marvel fan, sports enthusiast, especially soccer and basketball.
+        My coding and programming skills is pretty limited I can code in Python, R, a little bit of  SQL, 
+        and now beginner level in Javascript, HTML and CSS!!
+
+    </p>
+
+    <!-- List of my interests part-->
+    <h3> Here are some of my interests!!!</h3>
+
+    <ul>
+      <li> Sports (Soccer, Tennis, Basketball, Rugby)</li>
+      <li> Video Games (Fc24,Nba2k, Call of Duty,)</li>
+      <li> Asian Cuisine (Korean, Japanese, Thai, Chinese) </li>
+      <li> Entertainment (UFC, Onechampionship, Horror movies)</li>
+    </ul>
+
+    <!-- Second interaction part. Click on image to change the image -->
+    <h2>Guess my favourite soccer team:</h2>
+    <p> <strong> Click</strong> the image to gain more clues of the team.</p>
+    <img src="images/Madrid.png" alt="My test image" />
+    
+    <!--My hometowns-->
+    <h1>Lets get to know the place I grew up</h1>
+    <h2>1. Bangkok</h2>
+    
+    <!-- Third interaction part. Click on button to go to Bangkok page-->
+    <h3>Click below to see my recommendation of <strong> Bangkok!!</strong></h3>
+    <button id = 'navigateButton1'> Bangkok </button>
+
+    <script>
+        const navigateButton1 = document.getElementById("navigateButton1");
+        navigateButton1.addEventListener('click', function(){
+            window.location.href = 'html/bangkok.html';
+        })
+    </script>
+
+    <h2>2. Phuket</h2>
+     <!-- Fourth interaction part. Click on button to go to Phuket page-->
+    <h3>Click below to see my recommendation of <strong> Phuket!!</strong></h3>
+    <button id = 'navigateButton2'> Phuket </button> 
+
+    <script>
+        const navigateButton2 = document.getElementById("navigateButton2");
+        navigateButton2.addEventListener('click', function(){
+            window.location.href = 'html/chart.html';
+        })
+    </script>
+
+     <!-- List of content I want to include in the future-->
+    <h4>Here is a list of contents I want to add to this website later</h4>
+    <ul>
+      <li> Slide show pictures for each place I've visited</li>
+      <li> Animation (Background and Interactions)</li>
+      <li> Videos</li>
+    </ul>
+
+    <h3> Thank you for taking your time to know me. You can connect with me on Linkedin using the link below!</h3>
+    
+     <!-- Fifth interaction part. Click on link to go to my linkedin page-->
+    <a href="https://www.linkedin.com/in/manoch-boonnantakul/"> Linkedin</a>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
